@@ -2,3 +2,11 @@ Participantes de la interacción:
 Franco Sultana
 Bazan Vaquera, Nicolas J.A
 Ormeño Diego
+
+a) Haciendo los comandos: 
+	1. git add stream (repo original) [agrego reerencia al repo original]
+	2. git fecth upstream [traigo las ramas]
+	3. git checkout main [para checkear que estoy en el main]
+	4. git rebase upstream/main [actualizo los cambios]
+
+b) No puede actualizar, porque el fork está hecho sobre el repo principal, no al de gamma
