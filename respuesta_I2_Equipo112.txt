@@ -10,3 +10,8 @@ a) Haciendo los comandos:
 	4. git rebase upstream/main [actualizo los cambios]
 
 b) No puede actualizar, porque el fork está hecho sobre el repo principal, no al de gamma
+
+c) No puede actualizar, porque le fork esta hecho sobre el repo principal, no sobre el de ALFA
+
+d) Se pisan.
+
