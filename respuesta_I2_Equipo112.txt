@@ -15,3 +15,57 @@ c) No puede actualizar, porque le fork esta hecho sobre el repo principal, no so
 
 d) Se pisan.
 
+e) Comandos necesarios para la resolución:
+	Incluimos solo comandos, no pasos que se hacen mediante la pagina de GitHub, ya que el punto especifica solo comandos.
+
+	Bazan Vaquera, Nicolas J.A (Beta)
+Paso 1: añadir archivos fork.txt y readme.md
+	git add nombreArchivo
+	git commit -m "comentario"
+	git branch -M main
+	git remote add origin "repoPrincipalLink"
+	git push -u origin main
+
+Paso 2: luego de forkeado el repo Principal, gamma modifica Fork.txt y lo sube a su Fork.
+
+	Sultana Franco (Gamma)
+	git clone LinkRepo
+  Sobre otra carpeta inicializada sobre el repoFork
+	git add archivoModif
+	git commit -m "comentario"
+	git branch -M main
+	git push -u origin main
+Paso 3: luego de forkeado el repo Principal, alfa hace lo mismo pero con su propio Fork.
+
+	Ormeño Diego(Alfa)
+	git clone LinkRepo
+  Sobre otra carpeta inicializada sobre el repoFork
+	git add archivoModif
+	git commit -m "comentario"
+	git branch -M main
+	git push -u origin main
+	
+Paso 4: Beta clona su repositorio y agrega NuevoDato.txt
+	
+	git clone linkRepoPrincipal
+	git add archivoNuevo
+	git commit -m "comentario"
+	git branch -M main
+	git push -u origin main
+
+Paso 5: Alfa y Gamma ejecutan estos comandos para actualizar su Fork al estado del Fork original, o tambien por la página.
+
+	git remote add upstream linkRepoFork
+	git fetch upstream
+	git checkout main
+	git rebase upstream/main
+
+Paso 6: Beta crea el archivo respuestas, cada uno responde y pushea al repo original mediante pull request o contribuyentes.
+	Si fuera por contribuyentes;
+   Sobre una carpeta inicializada sobre el repo principal
+	git clone RepoOriginal
+	
+	git add respuesta
+	git commit -m "comentario"
+	git branch -M main
+	git push -u origin main
